@@ -1,0 +1,22 @@
+{
+    "name": "ace/module-core",
+    "description": "",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Durga shankar Gupta",
+            "email": "dsguptas@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Ace\\Core\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}
