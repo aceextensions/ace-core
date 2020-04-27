@@ -1,7 +1,7 @@
 <?php
 /*
- * Filename: /project/magento234/magento/app/code/Ace/Core/Block/Info.php
- * Path: /project/magento234/magento/app/code/Ace/Core/Block
+ * Filename: /project/magento234/magento/app/code/Aceextensions/Core/Block/Info.php
+ * Path: /project/magento234/magento/app/code/Aceextensions/Core/Block
  * Created Date: Sunday, April 5th 2020, 12:59:32 pm
  * Author: durga
  * 
@@ -9,7 +9,7 @@
  * @todo Show Ace extension detail
  */
 
-namespace Ace\Core\Block;
+namespace Aceextensions\Core\Block;
 
 use Magento\Framework\Data\Form\Element\AbstractElement;
 use Magento\Framework\Json\DecoderInterface;
@@ -76,8 +76,8 @@ class Info extends \Magento\Config\Block\System\Config\Form\Fieldset
 
         sort($modules);
         foreach ($modules as $moduleName) {
-            if (strstr($moduleName, 'Ace_') === false
-                || $moduleName === 'Ace_Core'
+            if (strstr($moduleName, 'Aceextensions_') === false
+                || $moduleName === 'Aceextensions_Core'
             ) {
                 continue;
             }
@@ -143,7 +143,7 @@ class Info extends \Magento\Config\Block\System\Config\Form\Fieldset
         $moduleName = $this->_replaceAceText($moduleName);
         $status =
              '<a target="_blank">
-                <img src="'. $this->getViewFileUrl('Ace_Core::images/ok.gif') . '" title="' . __("Installed") . '"/>
+                <img src="'. $this->getViewFileUrl('Aceextensions_Core::images/ok.gif') . '" title="' . __("Installed") . '"/>
              </a>';
 
        
@@ -152,7 +152,7 @@ class Info extends \Magento\Config\Block\System\Config\Form\Fieldset
         if ($this->_scopeConfig->getValue('advanced/modules_disable_output/' . $moduleCode)) {
             $status =
                 '<a href="' . $url . '" target="_blank">
-                        <img src="' . $this->getViewFileUrl('Ace_Core::images/bad.gif') .
+                        <img src="' . $this->getViewFileUrl('Aceextensions_Core::images/bad.gif') .
                             '" alt="' . __("Output disabled") . '" title="'. __("Output disabled")
                 .'"/></a>';
         }
@@ -175,7 +175,7 @@ class Info extends \Magento\Config\Block\System\Config\Form\Fieldset
     protected function _replaceAceText($moduleName)
     {
         $moduleName = str_replace('for Magento 2', '', $moduleName);
-        $moduleName = str_replace('by Ace', '', $moduleName);
+        $moduleName = str_replace('by Aceextensions', '', $moduleName);
 
         return $moduleName;
     }

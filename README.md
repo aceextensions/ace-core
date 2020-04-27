@@ -1,6 +1,6 @@
 # Mage2 Module Ace Core
 
-    ``ace/module-core``
+    aceextensions/module-core
 
  - [Main Functionalities](#markdown-header-main-functionalities)
  - [Installation](#markdown-header-installation)
@@ -29,7 +29,7 @@
     - public repository `packagist.org`
     - public github repository as vcs
  - Add the composer repository to the configuration by running `composer config repositories.repo.magento.com composer https://repo.magento.com/`
- - Install the module composer by running `composer require ace/module-core`
+ - Install the module composer by running `composer require aceextensions/module-core`
  - enable the module by running `php bin/magento module:enable Ace_Core`
  - apply database updates by running `php bin/magento setup:upgrade`\*
  - Flush the cache by running `php bin/magento cache:flush`

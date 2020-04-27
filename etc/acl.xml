@@ -6,7 +6,7 @@
 				<resource id="Magento_Backend::stores">
 					<resource id="Magento_Backend::stores_settings">
 						<resource id="Magento_Config::config">
-							<resource id="Ace_Core::config_ace_core" title="ace_core"/>
+							<resource id="Aceextensions_Core::config_aceextensions_core" title="aceextensions_core"/>
 						</resource>
 					</resource>
 				</resource>
