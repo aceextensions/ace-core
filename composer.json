@@ -2,7 +2,7 @@
     "name": "ace/module-core",
     "description": "",
     "type": "magento2-module",
-    "license": "proprietary",
+    "license": "OSL-3.0",
     "authors": [
         {
             "name": "Durga shankar Gupta",
